@@ -62,7 +62,7 @@ def wordstat(*names):
                   if '.csv' not in result:
                       print('неверный формат файла, необходим файл csv')
                   else:
-                      count=1
+                      x=1
                   with open(result,'w+') as csvfile:
                       writer=csv.writer(csvfile, delimiter=',')
                       writer.writerow(['слово','частота'])
