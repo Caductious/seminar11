@@ -1,10 +1,9 @@
 import re, csv
-def wordcount():
-  quantity=input('введите кол-во слов')
+def wordcount(file_name):
+  quantity=input('введите кол-во слов, в случае буквенного значения так будет назван csv файл')
   if quantity=='':
     quantity=100
   filee=quantity
-  file_name=input('введите полное название файла')
   words={}
   string=''
   lst=[]
@@ -62,7 +61,7 @@ def wordstat(*names):
         dic[key]+=int(value)
     x=0
     while x==0:
-      result='cum3.csv'
+      result=input('введите имя файла для результата')
       if '.csv' not in result:
         print('неверный формат файла, необходим файл csv')
       else:
