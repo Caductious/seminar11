@@ -73,4 +73,3 @@ def wordstat(*names):
       for k, v in dic.items():
         writer.writerow([k,v])
       print('ваш файл -',result)
-wordstat('cum.csv','cum.csv')
